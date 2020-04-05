@@ -1,0 +1,15 @@
+<div class="slot">
+  <div class="top-gradient"></div>
+  <div class="bottom-gradient"></div>
+  <div class="default" *ngIf="!selectedValue && !isScrolling">{{defaultTerm}}</div>
+  <div class="frame" *ngIf="isScrolling">
+    <div *ngIf="valuesArray.length > 0" class="full-list elem-{{valuesArray.length}}" >
+      <div class="item" *ngFor="let value of valuesArray">{{value}}</div>
+    </div>
+    <div *ngIf="valuesArray.length == 0" class="full-list elem-{{maxNumMediaItems}}" >
+      <div class="item"  *ngFor="let item of [].constructor(4); let i = index;">{{i + 1}}ª</div>
+    </div>
+  </div>
+  <div class="selected-value" *ngIf="selectedValue && !isScrolling">{{selectedValue}}</div>
+
+</div>

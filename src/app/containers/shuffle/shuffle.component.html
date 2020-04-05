@@ -1,0 +1,11 @@
+<div class="shuffle-component">
+  <div class="container">
+    <div class="title">¿No sabes que ver?</div>
+    <div class="desc">Dale al botón y déjalo en manos del azar 🎲</div>
+   <slot #slot1 [defaultTerm]="'Servicio'" [valuesArray]="streamingServices"></slot>
+   <slot #slot2 [defaultTerm]="'Tipo'" [valuesArray]="mediaType"></slot>
+   <slot #slot3 [defaultTerm]="'Categoria'" [valuesArray]="mediaCategory"></slot>
+   <slot #slot4 [defaultTerm]="'Nº en la lista'"></slot>
+    <main-button (click)="onButtonClick()" [text]="'shuffle'"></main-button>
+  </div>
+</div>

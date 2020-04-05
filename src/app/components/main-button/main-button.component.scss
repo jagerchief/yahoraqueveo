@@ -1,0 +1,16 @@
+.main-button{
+  width: 100%;
+  color: white;
+  text-align: center;
+  background: linear-gradient(to right, #F2C94C 0%, #F2994A 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  padding: 20px 10px;
+  border:none;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  &.negative{
+    background: transparent;
+    border: solid 1px white;
+  }
+}
